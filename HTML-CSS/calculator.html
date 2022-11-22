@@ -1,1 +1,85 @@
 
+<html>
+<title>
+CALCULATER
+</title>
+<head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} 
+.button3 {background-color: #f44336;}
+.button5 {background-color: #555555;} 
+</style>
+<script>
+function add()
+{
+var n=parseInt(document.getElementById("n1").value);
+var m=parseInt(document.getElementById("n2").value);
+document.getElementById("res").value=m+n;
+}
+function sub()
+{
+var n=parseInt(document.getElementById("n1").value);
+var m=parseInt(document.getElementById("n2").value);
+document.getElementById("res").value=m-n;
+}
+function mul()
+{
+var n=parseInt(document.getElementById("n1").value);
+var m=parseInt(document.getElementById("n2").value);
+document.getElementById("res").value=m*n;
+}
+function div()
+{
+var n=parseInt(document.getElementById("n1").value);
+var m=parseInt(document.getElementById("n2").value);
+document.getElementById("res").value=m/n;
+}
+function reset()
+{
+document.getElementById("n1").value="";
+document.getElementById("n2").value="";
+document.getElementById("res").value="";
+}
+</script>
+</head>
+<body>
+<body align="center"
+bgcolor="skyblue" 
+
+<form >
+enter number <input type="text" id="n1">
+<br>
+
+enter number <input type="text" id="n2">
+<br>
+result      =   <input type="text" id="res">
+<br>
+<br>
+<button  class="button" onclick="add()"> Addition</button>
+<button   class="button button2"onclick="sub()"> Substraction</button>
+<button class="button button3"onclick="mul()"> Multiplication </button>
+<button class="button button4"onclick="div()">  Division</button>
+<input type="button" value="reset" onclick="reset();"/>
+
+<br>
+<br>
+
+</form>
+</body>
+</html>
+
+
+
